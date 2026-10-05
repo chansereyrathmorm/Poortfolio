@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chansereyrath | System Admin & Web Developer Portfolio</title>
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans leading-normal tracking-normal">
+
+    <!-- Header / Navbar -->
+    <nav class="bg-gray-800/90 backdrop-blur-md p-4 sticky top-0 z-50 border-b border-gray-700 shadow-xl">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            
+            <!-- PNC Logo & Brand Name -->
+            <div class="flex items-center gap-3">
+                <!-- កែប្រែឈ្មោះជា PNC-Logo.png រួចរាល់ -->
+                <img src="PNC-Logo.png" alt="Passerelles Numériques Logo" class="h-10 w-auto rounded shadow">
+                <h1 class="text-xl font-bold text-blue-400 flex items-center gap-2">
+                    <i class="fa-solid fa-terminal"></i> Chansereyrath.<span class="text-xs bg-blue-900/80 text-blue-300 px-2 py-0.5 rounded border border-blue-700">SysAdmin</span>
+                </h1>
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="hidden md:flex space-x-6 text-sm font-semibold">
+                <a href="#about" class="hover:text-blue-400 transition">About</a>
+                <a href="#skills" class="hover:text-blue-400 transition">Skills</a>
+                <a href="#architecture" class="hover:text-blue-400 transition">Infrastructure</a>
+                <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
+                <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+            </div>
+            
+            <a href="#contact" class="bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold px-4 py-2 rounded-lg transition shadow">
+                Hire / Contact
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero / About Section -->
+    <section id="about" class="max-w-7xl mx-auto my-12 p-6 flex flex-col md:flex-row items-center gap-10">
+        
+        <!-- Profile Picture -->
+        <div class="relative group">
+            <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000"></div>
+            <div class="relative w-44 h-44 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-gray-800 shadow-2xl">
+                <img src="my-photo.jpg" alt="Chansereyrath Profile" class="w-full h-full object-cover">
+            </div>
+        </div>
+
+        <div class="flex-1 text-center md:text-left">
+            <div class="inline-block bg-blue-900/50 text-blue-300 text-xs font-semibold px-3 py-1 rounded-full border border-blue-700 mb-3">
+                🚀 Aspiring DevOps & System Administrator
+            </div>
+            <h2 class="text-3xl md:text-5xl font-extrabold text-white tracking-tight">
+                Hello, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-300">Chansereyrath</span>
+            </h2>
+            
+            <p class="text-gray-300 text-lg mt-2 font-medium">
+                IT Student at <span class="text-blue-400 font-semibold">Passerelles Numériques Cambodia (PNC)</span>
+            </p>
+            
+            <p class="mt-4 text-gray-400 leading-relaxed max-w-2xl">
+                Passionate about Cloud Computing, Linux System Administration, and Web Technologies. I specialize in designing, deploying, and managing multi-server infrastructure on AWS EC2, configuring Linux services (Apache/MySQL), and automating web deployment workflows.
+            </p>
+
+            <!-- Quick Info Badges -->
+            <div class="mt-6 flex flex-wrap justify-center md:justify-start gap-4 text-xs font-medium text-gray-300">
+                <span class="bg-gray-800 px-3 py-1.5 rounded-md border border-gray-700 flex items-center gap-2">
+                    <i class="fas fa-location-dot text-red-400"></i> Phnom Penh, Cambodia
+                </span>
+                <span class="bg-gray-800 px-3 py-1.5 rounded-md border border-gray-700 flex items-center gap-2">
+                    <i class="fas fa-graduation-cap text-yellow-400"></i> PNC Batch 2026
+                </span>
+                <span class="bg-gray-800 px-3 py-1.5 rounded-md border border-gray-700 flex items-center gap-2">
+                    <i class="fas fa-server text-green-400"></i> AWS Certified Trainee
+                </span>
+            </div>
+
+            <div class="mt-8 flex justify-center md:justify-start gap-4">
+                <a href="https://github.com" target="_blank" class="bg-gray-800 hover:bg-gray-700 px-5 py-2.5 rounded-lg text-sm font-semibold flex items-center gap-2 border border-gray-600 shadow transition">
+                    <i class="fab fa-github text-lg"></i> GitHub Profile
+                </a>
+                <a href="#projects" class="bg-blue-600 hover:bg-blue-500 px-5 py-2.5 rounded-lg text-sm font-semibold shadow transition">
+                    Explore Projects <i class="fas fa-arrow-down ml-1"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills" class="bg-gray-800/60 py-16 border-y border-gray-700/80">
+        <div class="max-w-7xl mx-auto px-6">
+            <h3 class="text-3xl font-bold text-blue-400 mb-2 text-center">Skills & Technical Capabilities</h3>
+            <p class="text-gray-400 text-center text-sm mb-12">Core technologies and tools I work with daily</p>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 text-center">
+                
+                <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 hover:border-yellow-500/50 hover:bg-gray-750 transition duration-300 shadow">
+                    <i class="fab fa-linux text-4xl text-yellow-500 mb-3"></i>
+                    <h4 class="font-bold text-white text-base">Ubuntu Linux</h4>
+                    <p class="text-xs text-gray-400 mt-1">Bash CLI, Permissions, Swap, Systemd</p>
+                </div>
+
+                <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 hover:border-orange-500/50 hover:bg-gray-750 transition duration-300 shadow">
+                    <i class="fab fa-aws text-4xl text-orange-400 mb-3"></i>
+                    <h4 class="font-bold text-white text-base">AWS EC2</h4>
+                    <p class="text-xs text-gray-400 mt-1">Instances, Security Groups, Elastic IP</p>
+                </div>
+
+                <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 hover:border-red-500/50 hover:bg-gray-750 transition duration-300 shadow">
+                    <i class="fas fa-server text-4xl text-red-500 mb-3"></i>
+                    <h4 class="font-bold text-white text-base">Apache Web Server</h4>
+                    <p class="text-xs text-gray-400 mt-1">Virtual Hosts, .htaccess, SSL Setup</p>
+                </div>
+
+                <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 hover:border-blue-500/50 hover:bg-gray-750 transition duration-300 shadow">
+                    <i class="fas fa-database text-4xl text-blue-400 mb-3"></i>
+                    <h4 class="font-bold text-white text-base">MySQL Database</h4>
+                    <p class="text-xs text-gray-400 mt-1">Remote Access, Users, SQL Queries</p>
+                </div>
+
+                <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 hover:border-red-400/50 hover:bg-gray-750 transition duration-300 shadow">
+                    <i class="fab fa-git-alt text-4xl text-red-400 mb-3"></i>
+                    <h4 class="font-bold text-white text-base">Git & GitHub</h4>
+                    <p class="text-xs text-gray-400 mt-1">Version Control, SSH Keys, Repos</p>
+                </div>
+
+                <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 hover:border-blue-400/50 hover:bg-gray-750 transition duration-300 shadow">
+                    <i class="fab fa-html5 text-4xl text-orange-500 mb-3"></i>
+                    <h4 class="font-bold text-white text-base">Web Front-end</h4>
+                    <p class="text-xs text-gray-400 mt-1">HTML5, Tailwind CSS, JavaScript</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- System Architecture Section -->
+    <section id="architecture" class="max-w-7xl mx-auto py-16 px-6">
+        <h3 class="text-3xl font-bold text-blue-400 mb-2 text-center">System Architecture</h3>
+        <p class="text-gray-400 text-center text-sm mb-10">AWS 2-Tier Architecture configured for Server OS Project</p>
+
+        <div class="bg-gray-800 rounded-2xl p-8 border border-gray-700 shadow-xl">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                
+                <!-- Architecture Diagram -->
+                <div class="bg-gray-900/80 p-6 rounded-xl border border-gray-700 font-mono text-sm">
+                    <div class="text-xs text-blue-400 font-bold mb-4 flex items-center gap-2">
+                        <i class="fas fa-network-wired"></i> AWS Cloud VPC (ap-southeast-2)
+                    </div>
+
+                    <!-- Web Tier -->
+                    <div class="bg-gray-800 p-4 rounded border border-blue-500/50 mb-4">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-white font-bold text-xs flex items-center gap-2">
+                                <i class="fas fa-desktop text-blue-400"></i> Ubuntu-Web-Server (t3.micro)
+                            </span>
+                            <span class="text-green-400 text-xs">● Running</span>
+                        </div>
+                        <p class="text-xs text-gray-400">Public IP: 13.239.18.14 | Port: 80 (HTTP)</p>
+                        <div class="mt-2 text-xs text-gray-300 space-y-1 pl-3 border-l-2 border-blue-500">
+                            <div>▸ /var/www/portfolio (Portfolio Web)</div>
+                            <div>▸ /var/www/score (Score App)</div>
+                            <div>▸ /var/www/wordpress (WordPress CMS)</div>
+                        </div>
+                    </div>
+
+                    <!-- Connection Arrow -->
+                    <div class="text-center text-gray-500 my-1">
+                        <i class="fas fa-arrow-down-up text-lg text-blue-400"></i> <span class="text-xs text-gray-400">MySQL Connection (Port 3306)</span>
+                    </div>
+
+                    <!-- DB Tier -->
+                    <div class="bg-gray-800 p-4 rounded border border-green-500/50">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-white font-bold text-xs flex items-center gap-2">
+                                <i class="fas fa-database text-green-400"></i> Databases Server (t3.micro)
+                            </span>
+                            <span class="text-green-400 text-xs">● Running</span>
+                        </div>
+                        <p class="text-xs text-gray-400">Public IP: 54.252.53.166 | MySQL Engine</p>
+                        <div class="mt-2 text-xs text-gray-300 space-y-1 pl-3 border-l-2 border-green-500">
+                            <div>▸ score_db (Score Data)</div>
+                            <div>▸ wordpress_db (WP Content Data)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Explanation -->
+                <div class="space-y-4">
+                    <h4 class="text-2xl font-bold text-white">Multi-Server Deployment Strategy</h4>
+                    <p class="text-gray-300 leading-relaxed text-sm">
+                        To ensure high performance and security separation, the infrastructure is separated into a **2-Tier Architecture**:
+                    </p>
+                    <ul class="space-y-3 text-sm text-gray-300">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-blue-400 mt-1"></i>
+                            <span><strong>Web Tier:</strong> Hosts 3 distinct websites using Apache Virtual Hosts listening on HTTP port 80.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-green-400 mt-1"></i>
+                            <span><strong>Database Tier:</strong> Isolated MySQL database server configured to accept secure remote connections from Web Server IP.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-yellow-400 mt-1"></i>
+                            <span><strong>Resource Optimization:</strong> Swap Memory space added to both instances to maintain smooth operation on AWS Free Tier.</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="max-w-7xl mx-auto py-16 px-6">
+        <h3 class="text-3xl font-bold text-blue-400 mb-2 text-center">Hosted Projects Overview</h3>
+        <p class="text-gray-400 text-center text-sm mb-12">Live production websites running under Apache Virtual Hosts configuration</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <!-- Project 1: Personal Portfolio -->
+            <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-blue-500 transition shadow-lg flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="p-3 bg-blue-900/40 rounded-lg text-blue-400 border border-blue-800">
+                            <i class="fas fa-user-tie text-2xl"></i>
+                        </div>
+                        <span class="bg-blue-900/80 text-blue-300 text-xs px-3 py-1 rounded-full font-semibold border border-blue-700">Website #1</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-2">Personal Student Portfolio</h4>
+                    <p class="text-gray-400 text-sm mb-4 leading-relaxed">
+                        A modern, responsive portfolio website created to showcase my profile, technical skills, and Server OS academic coursework.
+                    </p>
+                    
+                    <div class="bg-gray-900/60 p-3 rounded-lg text-xs space-y-1.5 font-mono mb-4 text-gray-300 border border-gray-700/50">
+                        <div><strong class="text-blue-400">Path:</strong> /var/www/portfolio</div>
+                        <div><strong class="text-blue-400">Host:</strong> Local Virtual Host</div>
+                    </div>
+                </div>
+
+                <div class="pt-4 border-t border-gray-700 flex justify-between items-center text-xs text-gray-400 font-medium">
+                    <span>HTML5 / Tailwind CSS</span>
+                    <span class="text-blue-400 font-bold">Static Web</span>
+                </div>
+            </div>
+
+            <!-- Project 2: PNC Score Management System -->
+            <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-green-500 transition shadow-lg flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="p-3 bg-green-900/40 rounded-lg text-green-400 border border-green-800">
+                            <i class="fas fa-graduation-cap text-2xl"></i>
+                        </div>
+                        <span class="bg-green-900/80 text-green-300 text-xs px-3 py-1 rounded-full font-semibold border border-green-700">Website #2</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-2">PNC Score Management</h4>
+                    <p class="text-gray-400 text-sm mb-4 leading-relaxed">
+                        Full-stack web application designed for managing student grades. Integrated seamlessly with a remote MySQL database instance.
+                    </p>
+                    
+                    <div class="bg-gray-900/60 p-3 rounded-lg text-xs space-y-1.5 font-mono mb-4 text-gray-300 border border-gray-700/50">
+                        <div><strong class="text-green-400">DB Name:</strong> score_db</div>
+                        <div><strong class="text-green-400">Remote IP:</strong> 54.252.53.166</div>
+                    </div>
+                </div>
+
+                <div class="pt-4 border-t border-gray-700 flex justify-between items-center text-xs text-gray-400 font-medium">
+                    <span>PHP / Remote MySQL</span>
+                    <span class="text-green-400 font-bold">Dynamic App</span>
+                </div>
+            </div>
+
+            <!-- Project 3: WordPress CMS Website -->
+            <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-sky-500 transition shadow-lg flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="p-3 bg-sky-900/40 rounded-lg text-sky-400 border border-sky-800">
+                            <i class="fab fa-wordpress text-2xl"></i>
+                        </div>
+                        <span class="bg-sky-900/80 text-sky-300 text-xs px-3 py-1 rounded-full font-semibold border border-sky-700">Website #3</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-2">WordPress News CMS</h4>
+                    <p class="text-gray-400 text-sm mb-4 leading-relaxed">
+                        A full-fledged content management platform running on dedicated virtual host config with customized plugins & theme setups.
+                    </p>
+                    
+                    <div class="bg-gray-900/60 p-3 rounded-lg text-xs space-y-1.5 font-mono mb-4 text-gray-300 border border-gray-700/50">
+                        <div><strong class="text-sky-400">DB Name:</strong> wordpress_db</div>
+                        <div><strong class="text-sky-400">Engine:</strong> WordPress / PHP 8.x</div>
+                    </div>
+                </div>
+
+                <div class="pt-4 border-t border-gray-700 flex justify-between items-center text-xs text-gray-400 font-medium">
+                    <span>WordPress CMS</span>
+                    <span class="text-sky-400 font-bold">CMS Platform</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="bg-gray-800/60 py-16 border-t border-gray-700">
+        <div class="max-w-7xl mx-auto px-6">
+            <h3 class="text-3xl font-bold text-blue-400 mb-2 text-center">Education & Training</h3>
+            <p class="text-gray-400 text-center text-sm mb-10">Academic background and practical experience</p>
+
+            <div class="max-w-3xl mx-auto bg-gray-800 rounded-xl p-6 border border-gray-700 flex flex-col md:flex-row items-center gap-6 shadow">
+                <!-- កែប្រែឈ្មោះជា PNC-Logo.png រួចរាល់ -->
+                <img src="PNC-Logo.png" alt="PNC Logo" class="h-16 w-auto rounded bg-white p-1">
+                <div>
+                    <h4 class="text-xl font-bold text-white">Passerelles Numériques Cambodia (PNC)</h4>
+                    <p class="text-blue-400 text-sm font-semibold">Associate Degree in System & Network Administration / IT</p>
+                    <p class="text-gray-400 text-xs mt-2 leading-relaxed">
+                        Intensive hands-on training focusing on Linux System Administration, Network Routing & Switching, Cloud Infrastructure (AWS), Web Development, and Enterprise Cybersecurity.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="max-w-7xl mx-auto py-16 px-6">
+        <h3 class="text-3xl font-bold text-blue-400 mb-2 text-center">Get In Touch</h3>
+        <p class="text-gray-400 text-center text-sm mb-12">Feel free to connect for collaborations or inquiries</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            
+            <div class="space-y-6 bg-gray-800 p-8 rounded-xl border border-gray-700 shadow">
+                <h4 class="text-xl font-bold text-white mb-4">Contact Information</h4>
+                
+                <div class="flex items-center gap-4">
+                    <div class="w-10 h-10 bg-blue-900/50 text-blue-400 rounded-lg flex items-center justify-center border border-blue-800">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-gray-400">Email Address</p>
+                        <p class="text-sm font-semibold text-white">chansereyrath.morm@passerellesnumeriques.org</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <div class="w-10 h-10 bg-blue-900/50 text-blue-400 rounded-lg flex items-center justify-center border border-blue-800">
+                        <i class="fab fa-telegram"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-gray-400">Telegram</p>
+                        <p class="text-sm font-semibold text-white">@Chansereyrath</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <div class="w-10 h-10 bg-blue-900/50 text-blue-400 rounded-lg flex items-center justify-center border border-blue-800">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-gray-400">Location</p>
+                        <p class="text-sm font-semibold text-white">Phnom Penh, Cambodia</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Simple Contact Message Box -->
+            <div class="bg-gray-800 p-8 rounded-xl border border-gray-700 shadow flex flex-col justify-between">
+                <div>
+                    <h4 class="text-xl font-bold text-white mb-2">Send Message</h4>
+                    <p class="text-gray-400 text-xs mb-6">You can leave a quick message or inquiry below.</p>
+
+                    <form class="space-y-4">
+                        <input type="text" placeholder="Your Name" class="w-full bg-gray-900 border border-gray-700 rounded-lg p-3 text-xs text-white focus:outline-none focus:border-blue-500">
+                        <input type="email" placeholder="Your Email" class="w-full bg-gray-900 border border-gray-700 rounded-lg p-3 text-xs text-white focus:outline-none focus:border-blue-500">
+                        <textarea rows="3" placeholder="Your Message..." class="w-full bg-gray-900 border border-gray-700 rounded-lg p-3 text-xs text-white focus:outline-none focus:border-blue-500"></textarea>
+                        <button type="button" class="w-full bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold py-3 rounded-lg transition shadow">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-8 text-center text-gray-500 border-t border-gray-700 text-sm">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p>© 2026 Chansereyrath Morm — Server OS Project</p>
+            <p class="text-xs">Passerelles Numériques Cambodia (PNC)</p>
+        </div>
+    </footer>
+
+</body>
+</html>
